@@ -1,0 +1,43 @@
+footer{
+    height: 230px;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+footer hr{
+    color: white;
+    margin: 10px;
+
+}
+#shop-name{
+    font-size: 25px;
+    margin: 23px;
+    text-decoration: none;
+    line-height: 40px;
+
+}
+#footer-links{
+    word-spacing: 17px;
+    line-height: 26px;
+}
+#footer-links p{
+    margin: 23px;
+    line-height: 28px;
+}
+#final a{
+    margin-left: 23px;
+    text-decoration: none;
+    color: white;
+}
+#final a:hover, #footer-links p a:hover{
+    color: #2cd1ad;
+}
+
+#footer-links p a{
+    text-decoration: none;
+    color: white;
+}
+
+               
+                
+            

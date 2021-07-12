@@ -1,0 +1,29 @@
+#head {
+	padding-bottom: 30px;
+}
+#head ul {
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+	position: fixed;
+	top:0;
+	width:100%;
+	background-color: #2cd1ad;
+}
+#head li{
+	float: left;
+	margin-right:30px;
+	text-decoration: none;
+}
+#head li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding:15px; 
+	font-size: 15px;
+	text-decoration: none;
+	font-family:Verdana,Arial,Sans-serif ;
+}
+#head li a:hover{
+	background-color: #008CBA;
+}
