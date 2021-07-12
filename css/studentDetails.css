@@ -9,14 +9,14 @@ body{
     width: 100%;
 }
 #member-1-img{
-    background-image: url("images/student1.jpeg");
+    background-image: url("../images/student1.jpeg");
 }
 #member-2-img{
-    background-image: url("images/student2.jpg");
+    background-image: url("../images/student2.jpg");
     background-position-y: -50px;  
 }
 #member-3-img{
-    background-image: url("images/student3.jpg");
+    background-image: url("../images/student3.jpg");
 }
 .img-features{
     background-size: cover;
