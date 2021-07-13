@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz Paper</title>
     <script src="js/quiz.js"></script>
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/quiz.css">
@@ -16,7 +16,7 @@
     <a id="top"></a>   
 
     <!-- Area to put menu links -->
-    <div id="head">     
+    <div id="navBar">     
         <ul>
             <li><a href="#">Query Form</a></li>
             <li><a href="#">Buy Products</a></li>
@@ -24,9 +24,10 @@
             <li><a href="quiz.html">Quiz</a></li>
             <li><a href="#">Thumbnail Images</a></li>
             <li><a href="studentDetails.html">Student Details</a></li>
+            <li id="imgLi"><a href="#"><img src="images/logonew.png" alt="logo"></a></li>
         </ul>
     </div>
-    <div id="title"><h2>Quiz - For Fun</h2></div>
+    <div id="title"><h2>WHY NOT GIVE A TRY TO THIS QUIZ?</h2></div>
 
     <!-- Instructions Area to do this quiz -->
     <div id="instructions">
@@ -35,7 +36,7 @@
             <li>This question paper is just for fun.</li>
             <li>We have 10 general knowledge questions here.</li>
             <li>You will get 2 marks for each correct answer and -1 for each wrong answer.</li>
-            <li>You have 20 minutes to complete this quiz</li>
+            <li>You have 100 seconds to complete this quiz</li>
             <li>After you submit, you will get a box displaying your score with a background color according to your score.<br>
             <ul>
                 <li>Score = 20  --- Green</li>
@@ -49,12 +50,15 @@
 
     <div id="final-Results">
         <p id="resultsDisplay"></p>
+    </div>
 
+    <div id="timer-box">
+        <div id="timer-display"></div>
     </div>
 
     <!-- Quiz paper goes here -->
     <div id="main">  
-        <form method="post" id="form" name="form" onsubmit="" action="">
+        <form id="form" name="form">
             <h3>Q1. Where was the 1936 Summer Olympic Games held?</h3>
             <ul>
                 <li>
@@ -267,7 +271,7 @@
 
             <hr>
             <!-- Sending radio values to check answers -->
-            <input type="button" name="btnSubmit" value="Submit" onclick="checkAnswers(this.form)">
+            <input type="button" id="btnSubmit" name="btnSubmit" value="Submit" onclick="checkAnswers(this.form)">
         </form>
 
     </div> 
@@ -300,11 +304,9 @@
         </div>
         <hr>
         <span id="final">
-        
-            <a href="#">Page Developer : More Info >>
-            </a>
+             <!-- Link to the page editor page -->
+            <a href="editorPurna.html">Page Developer : More Info >></a>
         </span>
-
-    </footer> 
+    </footer>
 </body>
 </html>

@@ -6,6 +6,8 @@ ul{
 }
 #title{
     margin-top: 50px;
+    font-family: Arial Black;
+    text-align: left;
 }
 #main{
     width: 50%;
@@ -26,7 +28,7 @@ ul{
     list-style-type: disc;
     font-size: 19px;
 }
-li{
+#instructions li{
     line-height: 25px;
 }
 .displayCorrections{
@@ -38,12 +40,27 @@ li{
 #final-Results{
     border: solid black 1px;
     width: 45%;
-    height: 150px;
-    margin-top: 1875px;
+    height: 200px;
+    margin-top: 1585px;
     margin-right: -645px;
     display: block;
     float: right;
     visibility: hidden;
+}
+#timer-box{
+    border: solid black 1px;
+    text-align: center;
+    font-family: Arial Black;
+    width: 45%;
+    height: 50px;
+    margin-top: 374px;
+    margin-right: -645px;
+    display: block;
+    float: right;
+}
+#timer-display{
+    color: red;
+    margin-top: 11px;
 }
 #resultsDisplay{
     font-weight: 600;

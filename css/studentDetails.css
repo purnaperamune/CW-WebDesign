@@ -3,6 +3,10 @@ body{
     margin-left: 0px;
     margin-bottom: 0px;
 }
+div h1{
+    font-family: Arial Black;
+    text-align: center;
+}
 .main{
     background-color: #2cd1ad;
     height: 520px;
