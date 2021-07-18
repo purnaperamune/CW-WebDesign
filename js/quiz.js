@@ -73,7 +73,7 @@ function checkAnswers(form){
     }    
     else if(score>=10){
         document.getElementById("resultsDisplay").innerHTML = "Not Bad! <br> Your score is "+score+" ;-) <br> You finished the quiz in "+(100-timer)+" seconds";
-        document.getElementById("final-Results").style.backgroundColor = "Yellow" ;
+        document.getElementById("final-Results").style.backgroundColor = "Blue" ;
     }
     else if(score>=0){
         document.getElementById("resultsDisplay").innerHTML = "Bad!<br> Your score is "+score+" :-| <br> You finished the quiz in "+(100-timer)+" seconds";

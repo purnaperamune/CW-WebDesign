@@ -1,6 +1,11 @@
 body{
     margin: 0px;
 }
+body{
+    background-image: url(../images/quiz.jpg);
+    color: whitesmoke;
+    background-size: contain;
+}
 ul{
     list-style-type: none;
 }
@@ -11,13 +16,14 @@ ul{
 }
 #main{
     width: 50%;
-    border: black solid 2px;
+    border: white solid 5px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
+
 #instructions{
-    border: solid black 2px;
+    border: solid white 5px;
     width: 45%;
     margin-right: 20px;
     display: block;
@@ -48,18 +54,18 @@ ul{
     visibility: hidden;
 }
 #timer-box{
+    background-color: red;
     border: solid black 1px;
     text-align: center;
     font-family: Arial Black;
     width: 45%;
     height: 50px;
-    margin-top: 374px;
-    margin-right: -645px;
-    display: block;
-    float: right;
+    margin-left: 768px;
+    margin-top: -57px;
+    position: fixed;
 }
 #timer-display{
-    color: red;
+    color: black;
     margin-top: 11px;
 }
 #resultsDisplay{
