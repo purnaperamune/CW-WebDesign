@@ -3,7 +3,6 @@ window.onload = countdownTimer();
 var intervals;
 var timer = 100;
 function countdownTimer(){
-    // var timer = 10;
     intervals = setInterval(function(){
         document.getElementById("timer-display").innerHTML = "You have "+timer+" seconds";
         if (timer == 0) {
