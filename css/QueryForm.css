@@ -1,0 +1,68 @@
+body {
+  background-image: url("../images/back9.jpg");
+  background-size:  100%;
+  background-attachment: fixed; 
+  font-family:Verdana,Arial,Sans-serif ;}
+  
+.query{padding:0px 16px 16px 16px;}
+
+h1{color:white;}
+
+#getData{
+	line-height:2;
+	width :950px;
+	height:620px;}
+	
+fieldset{
+	background-color:#eee;
+	border: 2px solid #2cd1ad;				
+	font-size:20px;
+	border-width: 5px;
+	border-radius: 5px; }
+
+legend {
+    background-color:#008CBA;
+    color:white;	
+    padding: 0 6px 0 6px;
+	border-radius: 5px;}
+
+
+label{
+	display: inline-block;
+	float :left;
+	width: 220px;}
+
+textarea {font-size: 15px; }
+
+#summary{
+	display:none;
+	line-height:2;
+	background-color:#eee;
+	max-width :1200px; }
+
+#Details{
+	display:inline-block;
+    width:1200px;
+	word-wrap:break-word;}
+
+.button {
+	background-color: #2cd1ad;
+	border: none;
+	color: white;
+	width:200px;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	margin:20px 13px 0 0 ;
+	font-size: 20px;
+	float:right;}
+	
+.button:hover{background-color: #008CBA;}
+
+#editor {
+	position: absolute; 
+    bottom: 5px;
+	color:white;}
+a:link, a:visited{
+	color:white;
+	text-decoration: none;}
