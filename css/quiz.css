@@ -88,7 +88,8 @@ input[type=button] {
 #nav-link a{
     text-decoration: underline;
     margin-left: 660px;
+    color: whitesmoke;
 }
 #nav-link a:hover{
-    color: brown;
+    color: red;
 }
