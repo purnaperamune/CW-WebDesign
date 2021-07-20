@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Query Form</title>
+		<link rel="stylesheet" href="css/navBar.css">
+		<link rel="stylesheet" href="css/QueryForm.css">
+		<script>
+			function getSelectedValue(selectList){
+				return selectList[ selectList.selectedIndex ].value;}
+			
+			function getSelectedText(selectList){
+				return selectList[ selectList.selectedIndex ].text;}
+			
+			function validateForm(frm){
+				var fname = frm.fname.value;
+				var sname = frm.sname.value;
+				var email = frm.email.value;
+				var tel=frm.telnum.value;
+				var Qdetails = frm.Qdetails.value;
+				
+				if (fname=="" && sname=="" && email=="" && tel=="" && Qdetails=="" && getSelectedValue(frm.subject)=="none"){
+					alert("Please fill the form");
+					return false;}
+					
+				else if (fname== "" && sname==""){
+					alert("Please Enter your name");
+					return false;}
+					
+				else if (fname== "") {
+					alert("Please Enter your First name");
+					return false;}
+					
+				else if (sname==""){
+					alert("Please Enter your Surname");
+					return false;}
+					
+				else if (tel==""){
+					alert("Please Enter a Telephone No.");
+					return false;}
+					
+				else if (tel.length<9 ||tel.length>10){
+					alert("Telephone number invalid");
+					return false;}
+					
+				else if (email==""){
+					alert("Please Enter your email");
+					return false;}
+					
+				else if (!(email.includes("@"))){
+					alert("'@' is required for your email");
+					return false;}
+					
+				else if (!(email.includes(".com"))){
+					alert("'.com' is required for your email");
+					return false;}
+					
+				else if (Qdetails==""){
+					alert("Please provide additional Query details");
+					return false;}
+					
+				else if (getSelectedValue(frm.subject)=="none"){
+					alert("Please select a Query subject");
+					return false;}
+				
+				else{
+					frm.style.display = "none";
+					return true;} 
+			}
+			
+			function showDiv(){
+				document.Form1.style.display = "block";
+				var summary = document.getElementById("summary");
+				summary.style.display = "none"; 
+				return true;	
+			}
+			
+			function resetForm(){
+				setTimeout(function(){Form1.reset();} , 50);	
+			}
+		
+			function validate(frm) {
+				var summary = document.getElementById("summary");	
+				if(validateForm(frm)){
+				var fname = frm.fname.value;
+				var sname = frm.sname.value;
+				var tel=frm.telnum.value;
+				var email = frm.email.value;
+				var subject=getSelectedText(frm.subject);
+				var Qdetails = frm.Qdetails.value;
+				document.getElementById("Name").innerHTML ="<b>Name&nbsp;&nbsp; : </b>"+fname+" "+sname;
+				document.getElementById("Email").innerHTML ="<b>Email&nbsp;&nbsp;&nbsp;&nbsp;: </b>"+email;
+				document.getElementById("TelNo").innerHTML ="<b>Telephone No.&nbsp;&nbsp;: </b>"+tel;
+				document.getElementById("Subject").innerHTML ="<b>Subject&nbsp;: </b>"+subject;
+				document.getElementById("Details").innerHTML ="<b>Details&nbsp;&nbsp;: </b>"+Qdetails;
+				summary.style.display = "block";  
+				}
+			}	
+		</script>
+	</head>
+	<body>
+		<div id="navBar">
+			<ul>
+				<li><a href="mainPage.html">Main Page</a></li>
+				<li><a href="QueryForm.html">Query Form</a></li>
+				<li><a href="productPayment.html">Buy Products</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="studentDetails.html">Student Details</a></li>
+				<li id="imgLi"><a href="mainPage.html"><img src="images/logonew.png" alt="logo"></a></li>
+			</ul>
+		</div>
+		<div class="query" >
+			<h1>Query Form</h1>
+			<form name="Form1" id="Form1" action="mailto:geeth.20200508@iit.ac.lk" method="post" onsubmit="showDiv();resetForm()">
+				<div id ="getData">
+					<fieldset>
+						<legend>Your Details</legend>
+						<label for="fname">First name:</label>
+						<input type="text" id="fname" name="fname" placeholder="Enter your firstname"><br>
+						<label for="sname">Surname:</label>
+						<input type="text" id="sname" name="sname" placeholder="Enter your surname"><br>
+						<label for="telnum">Telephone No:</label>
+						<input type="tel" id="telnum" name="telnum" placeholder="Enter your Telephone no."><br>
+						<label for="email">Email Address:</label>
+						<input type="email" id="email" name="email" placeholder="Enter your email"><br>
+						<br>
+						<label for="Qdetails">Query details:</label>
+						<textarea id="Qdetails" name="Qdetails" rows="15" cols="80" placeholder="Detailed description of your query"></textarea>
+						<br>
+						<label for="subject">Subject:</label>
+						<select name="subject" id="subject">
+							<option  value="none"> -- Select an option -- </option>
+							<option value="Order">Online ordering</option>
+							<option value="Return">Return-policy</option>
+							<option value="COrder">Custom order</option>
+							<option value="Other">Other</option>
+						</select>
+						<br>
+						<input  class="button" type="button" name="viewbtn" value="View Query" onclick="validate(this.form)">
+					</fieldset>
+				</div>
+			</form>
+			<fieldset id="summary">
+				<legend>Your Query</legend>
+				<span id="Name"></span><br>
+				<span id="Email"></span><br>
+				<span id="TelNo"></span><br>
+				<span id="Subject"></span><br>
+				<span id="Details"></span><br>
+				<form>
+					<input class="button" type="button"  name="editbtn" value="edit" onclick="showDiv()">
+					<input class="button" type="submit" form="Form1" name="Submitbtn" value="send" >
+				</form>
+			</fieldset>
+		</div>
+		<div id= "editor">
+			<a href="pageEditor.html">Page developer</a>
+		</div>
+	</body>
+</html>
+
