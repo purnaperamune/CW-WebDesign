@@ -68,6 +68,7 @@
 			}
 			
 			function showDiv(){
+				//show and hide divs
 				document.Form1.style.display = "block";
 				var summary = document.getElementById("summary");
 				summary.style.display = "none"; 
@@ -75,10 +76,12 @@
 			}
 			
 			function resetForm(){
+				//reset the form after submitting
 				setTimeout(function(){Form1.reset();} , 50);	
 			}
 		
 			function validate(frm) {
+				//validates if the form is completed
 				var summary = document.getElementById("summary");	
 				if(validateForm(frm)){
 				var fname = frm.fname.value;
