@@ -1,0 +1,126 @@
+body{
+	font-family:Verdana,Arial,Sans-serif ;
+	background-color:#e8e7e3;
+	margin:0px;}
+	
+#top{
+    position: relative;
+    top: -250px;
+    visibility: hidden;}
+	
+.logo{
+	background-color: white;
+	margin-top:-9px;
+	height:90px;}
+	
+.logo img{height:90px;}
+
+h1{
+	text-align:center;
+	font-size:50px;
+	margin-bottom:5px;}
+	
+.links{
+	margin-top:45px;
+	margin-right:auto;
+	margin-left:auto;
+	text-align: center;
+	padding:15px;
+	background-image: url("../images/nba.jpg");}
+	
+ul{list-style-type: none;}
+	
+.links li a {
+	background-color: #2cd1ad;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	width:220px;
+	padding: 19px;
+	text-align: center;
+	margin:15px ;
+	font-size: 20px;
+	display: inline-block;}
+	
+.links a:hover{
+	background-color: #008CBA;}
+
+#brands{
+	height:150px;
+	margin-right:auto;
+	margin-left:auto;
+	text-align: center;
+	margin-top:45px;
+	margin-bottom:85px;}
+	
+#brands img{
+	height:150px;
+    padding: 19px;}
+
+#sports{
+	height:150px;
+	margin-right:auto;
+	margin-left:auto;
+	text-align: center;
+	margin-bottom:120px; }
+	
+#sports img{
+	height:150px;
+    padding: 19px;}
+
+.sportSub{display: inline-block;}
+
+#info{
+	height:150px;
+	margin-right:auto;
+	margin-left:auto;
+	text-align: center;
+	margin-top:45px;
+	margin-bottom:76px;}
+
+.infoData{ 
+	display: inline-block; 
+	margin:20px; 
+	border-right: 1px solid black ; 
+	padding:26px;
+	border-left: 1px solid black ;}
+	
+.infoData img{ height:50px}
+	
+#about{
+	width: 500px;
+	margin-right:auto;
+	margin-left:auto;
+	text-align: justify;
+	padding:10px;
+	border: 2px solid #2cd1ad;
+	background-color:white;}
+
+#about h4{
+	text-align: center;
+	margin:5px;}
+
+#footer{
+	height:150px;
+	margin-right:auto;
+	margin-left:auto;
+	text-align: center;
+	margin-top:45px;
+	margin-bottom:0px;
+	background-color: white;
+	padding:18px;}
+	
+#footer img{height:30px}
+
+#linktop{
+	float:right;
+    margin-top:85px;}
+	
+#editor {
+	float: left; 
+    margin-top:85px;}
+	
+a:link, a:visited{
+	color:black;
+	text-decoration: none;}
+
