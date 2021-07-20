@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+}
+body{
+    background-image: url(../images/quiz.jpg);
+    color: whitesmoke;
+    background-size: contain;
+}
+ul{
+    list-style-type: none;
+}
+#title{
+    margin-top: 50px;
+    font-family: Arial Black;
+    text-align: left;
+}
+#main{
+    width: 50%;
+    border: white solid 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#instructions{
+    border: solid white 5px;
+    width: 45%;
+    margin-right: 20px;
+    display: block;
+    float: right;
+}
+
+#instructions ul{
+    list-style-type: disc;
+    font-size: 19px;
+}
+#instructions li{
+    line-height: 25px;
+}
+.displayCorrections{
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    
+}
+#final-Results{
+    border: solid black 1px;
+    width: 45%;
+    height: 200px;
+    margin-top: 1585px;
+    margin-right: -645px;
+    display: block;
+    float: right;
+    visibility: hidden;
+}
+#timer-box{
+    background-color: red;
+    border: solid black 1px;
+    text-align: center;
+    font-family: Arial Black;
+    width: 45%;
+    height: 50px;
+    margin-left: 768px;
+    margin-top: -57px;
+    position: fixed;
+}
+#timer-display{
+    color: black;
+    margin-top: 11px;
+}
+#resultsDisplay{
+    font-weight: 600;
+    font-size: 29px;
+    text-align: center;
+    padding: 3px;
+}
+h3,ul,#title{
+    margin-left: 25px;
+}
+input[type=button] {
+    margin-bottom: 10px;
+    margin-left: 25px;
+    background: aqua;
+    font-size: 20px;
+    height: 40px;
+    width: 80px;
+}
+#nav-link a{
+    text-decoration: underline;
+    margin-left: 660px;
+    color: whitesmoke;
+}
+#nav-link a:hover{
+    color: red;
+}

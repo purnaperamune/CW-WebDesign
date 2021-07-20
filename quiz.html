@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Paper</title>
+    <script src="js/quiz.js"></script>
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+</head>
+<body>
+    <!-- Anchor tag to move the page from down to this area -->
+    <a id="top"></a>   
+
+    <!-- Area to put menu links -->
+    <div id="navBar">     
+        <ul>
+            <li><a href="#">Query Form</a></li>
+            <li><a href="#">Buy Products</a></li>
+            <li><a href="#">Diagram SVG</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="#">Thumbnail Images</a></li>
+            <li><a href="studentDetails.html">Student Details</a></li>
+            <li id="imgLi"><a href="#"><img src="images/logonew.png" alt="logo"></a></li>
+        </ul>
+    </div>
+    <div id="title"><h2>WHY NOT GIVE A TRY TO THIS QUIZ?</h2></div>
+
+    <!-- Instructions Area to do this quiz -->
+    <div id="instructions">
+        <h3>Instructions</h3>
+        <ul>
+            <li>This question paper is just for fun.</li>
+            <li>We have 10 general knowledge questions here.</li>
+            <li>You will get 2 marks for each correct answer and -1 for each wrong answer.</li>
+            <li>You have 100 seconds to complete this quiz</li>
+            <li>After you submit, you will get a box displaying your score with a background color according to your score.<br>
+            <ul>
+                <li>Score = 20  --- Green</li>
+                <li>Score >= 10 --- Blue</li>
+                <li>Score >=  0 --- Orange</li>
+                <li>If your score is a negative one, you will get a Red background.</li>
+            </ul></li>
+            <li>Good Luck!</li>
+        </ul>
+    </div>
+
+    <div id="final-Results">
+        <p id="resultsDisplay"></p>
+    </div>
+
+    <div id="timer-box">
+        <div id="timer-display"></div>
+    </div>
+
+    <!-- Quiz paper goes here -->
+    <div id="main">  
+        <form id="form" name="form">
+            <h3>Q1. Where was the 1936 Summer Olympic Games held?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="question1" id="q1-anw1" value="A">
+                    <label for="q1-anw1">(A) Berlin, Germany</label>
+                </li>
+                <li>
+                    <input type="radio" name="question1" id="q1-anw2" value="B">
+                    <label for="q1-anw2">(B) Los Angeles, USA</label>
+                </li>
+                <li>
+                    <input type="radio" name="question1" id="q1-anw3" value="C">
+                    <label for="q1-anw3">(C) Paris, France</label>
+                </li>
+                <li>
+                    <input type="radio" name="question1" id="q1-anw4" value="D">
+                    <label for="q1-anw4">(D) Athens, Greece</label>
+                </li>
+            </ul>
+            <div id="resultsQ1" class="displayCorrections"></div>
+
+            <h3>Q2. Which country won the FIFA World Cup in 2012?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="question2" id="q2-anw1" value="A">
+                    <label for="q2-anw1">(A) Germany</label>
+                </li>
+                <li>
+                    <input type="radio" name="question2" id="q2-anw2" value="B">
+                    <label for="q2-anw2">(B) Brazil</label>
+                </li>
+                <li>
+                    <input type="radio" name="question2" id="q2-anw3" value="C">
+                    <label for="q2-anw3">(C) Spain</label>
+                </li>
+                <li>
+                    <input type="radio" name="question2" id="q2-anw4" value="D">
+                    <label for="q2-anw4">(D) France</label>
+                </li>
+            </ul>
+            <div id="resultsQ2" class="displayCorrections"></div>
+
+            <h3>Q3. Which country did Diego Maradona play for?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="question3" id="q3-anw1" value="A">
+                    <label for="q3-anw1">(A) Germany</label>
+                </li>
+                <li>
+                    <input type="radio" name="question3" id="q3-anw2" value="B">
+                    <label for="q3-anw2">(B) Portugal</label>
+                </li>
+                <li>
+                    <input type="radio" name="question3" id="q3-anw3" value="C">
+                    <label for="q3-anw3">(C) Brazil</label>
+                </li>
+                <li>
+                    <input type="radio" name="question3" id="q3-anw4" value="D">
+                    <label for="q3-anw4">(D) Argentina</label>
+                </li>
+            </ul>
+            <div id="resultsQ3" class="displayCorrections"></div>
+
+            <h3>Q4. Who won the NBA championship in 2020?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="question4" id="q4-anw1" value="A">
+                    <label for="q4-anw1">(A) Brooklyn Nets</label>
+                </li>
+                <li>
+                    <input type="radio" name="question4" id="q4-anw2" value="B">
+                    <label for="q4-anw2">(B) Los Angeles Lakers</label>
+                </li>
+                <li>
+                    <input type="radio" name="question4" id="q4-anw3" value="C">
+                    <label for="q4-anw3">(C) Miami Heat</label>
+                </li>
+                <li>
+                    <input type="radio" name="question4" id="q4-anw4" value="D">
+                    <label for="q4-anw4">(D) Milwaukee Bucks</label>
+                </li>
+            </ul>
+            <div id="resultsQ4" class="displayCorrections"></div>
+
+            <h3>Q5. Who is the youngest player to play international cricket?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="question5" id="q5-anw1" value="A">
+                    <label for="q5-anw1">(A) Sacin Tendulkar</label>
+                </li>
+                <li>
+                    <input type="radio" name="question5" id="q5-anw2" value="B">
+                    <label for="q5-anw2">(B) Hasan Raza</label>
+                </li>
+                <li>
+                    <input type="radio" name="question5" id="q5-anw3" value="C">
+                    <label for="q5-anw3">(C) Wasim Akram</label>
+                </li>
+                <li>
+                    <input type="radio" name="question5" id="q5-anw4" value="D">
+                    <label for="q5-anw4">(D) Shahid Afridi</label>
+                </li>
+            </ul>
+            <div id="resultsQ5" class="displayCorrections"></div>
+
+            <h3>Q6. Who has won the most Olympic gold medals?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="question6" id="q6-anw1" value="A">
+                    <label for="q6-anw1">(A) Larisa Latynina</label>
+                </li>
+                <li>
+                    <input type="radio" name="question6" id="q6-anw2" value="B">
+                    <label for="q6-anw2">(B) Nikolai Andrianov</label>
+                </li>
+                <li>
+                    <input type="radio" name="question6" id="q6-anw3" value="C">
+                    <label for="q6-anw3">(C) Usain Bolt</label>
+                </li>
+                <li>
+                    <input type="radio" name="question6" id="q6-anw4" value="D">
+                    <label for="q6-anw4">(D) Michael Phelps</label>
+                </li>
+            </ul>
+            <div id="resultsQ6" class="displayCorrections"></div>
+
+            <h3>Q7. Which country's rugby team is called the Springboks?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="question7" id="q7-anw1" value="A">
+                    <label for="q7-anw1">(A) South Africa</label>
+                </li>
+                <li>
+                    <input type="radio" name="question7" id="q7-anw2" value="B">
+                    <label for="q7-anw2">(B) England</label>
+                </li>
+                <li>
+                    <input type="radio" name="question7" id="q7-anw3" value="C">
+                    <label for="q7-anw3">(C) New Zealand </label>
+                </li>
+                <li>
+                    <input type="radio" name="question7" id="q7-anw4" value="D">
+                    <label for="q7-anw4">(D) Australia</label>
+                </li>
+            </ul>
+            <div id="resultsQ7" class="displayCorrections"></div>
+
+            <h3>Q8. Which country hosted the 2020 Winter Youth Olympics?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="question8" id="q8-anw1" value="A">
+                    <label for="q8-anw1">(A) Norway</label>
+                </li>
+                <li>
+                    <input type="radio" name="question8" id="q8-anw2" value="B">
+                    <label for="q8-anw2">(B) Switzerland</label>
+                </li>
+                <li>
+                    <input type="radio" name="question8" id="q8-anw3" value="C">
+                    <label for="q8-anw3">(C) Canada</label>
+                </li>
+                <li>
+                    <input type="radio" name="question8" id="q8-anw4" value="D">
+                    <label for="q8-anw4">(D) South Korea</label>
+                </li>
+            </ul>
+            <div id="resultsQ8" class="displayCorrections"></div>
+
+            <h3>Q9. Who is the winner of World Badminton Championship in 2015?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="question9" id="q9-anw1" value="A">
+                    <label for="q9-anw1">(A) Lin Dan</label>
+                </li>
+                <li>
+                    <input type="radio" name="question9" id="q9-anw2" value="B">
+                    <label for="q9-anw2">(B) Chen Long</label>
+                </li>
+                <li>
+                    <input type="radio" name="question9" id="q9-anw3" value="C">
+                    <label for="q9-anw3">(C) Lee Chong Wei</label>
+                </li>
+                <li>
+                    <input type="radio" name="question9" id="q9-anw4" value="D">
+                    <label for="q9-anw4">(D) Viktor Axelsen</label>
+                </li>
+            </ul>
+            <div id="resultsQ9" class="displayCorrections"></div>
+
+            <h3>Q10. What happens when a footballer gets a yellow card?</h3>
+            <ul>
+                <li>
+                    <input type="radio" name="question10" id="q10-anw1" value="A">
+                    <label for="q10-anw1">(A) Official warning to a player on offensive activities </label>
+                </li>
+                <li>
+                    <input type="radio" name="question10" id="q10-anw2" value="B">
+                    <label for="q10-anw2">(B) Immediately dismissed from the field of play</label>
+                </li>
+                <li>
+                    <input type="radio" name="question10" id="q10-anw3" value="C">
+                    <label for="q10-anw3">(C) Indicates a caution given to a player</label>
+                </li>
+                <li>
+                    <input type="radio" name="question10" id="q10-anw4" value="D">
+                    <label for="q10-anw4">(D) A two match ban </label>
+                </li>
+            </ul>
+            <div id="resultsQ10" class="displayCorrections"></div>
+
+            <hr>
+            <!-- Sending radio values to check answers -->
+            <input type="button" id="btnSubmit" name="btnSubmit" value="Submit" onclick="checkAnswers(this.form)">
+        </form>
+
+    </div> 
+    
+    <!-- Link to go to the top of the page -->
+    <div id="nav-link">
+        <a href="#top">To the top </a>
+    </div>
+
+    <!-- Footer Area -->
+    <footer>
+        <span id="shop-name">IITIANS SPORTS SHOP</span>
+        <hr>
+        <div id="footer-links">
+            <p>
+                <a href="#">About </a>|
+                <a href="#">Our Shop </a>|
+                <a href="#">Deals </a>|
+                <a href="#">Online </a>
+                <br>
+                <a href="#">Contact </a>|
+                <a href="#">Customer Service </a>|
+                <a href="#">IIT Sports </a>|
+                <a href="#">sportshop@iit.com </a>
+                <br>
+                Bracnhes |
+                <a href="#">Colombo </a>|
+                <a href="#">Kandy </a>
+            </p>    
+        </div>
+        <hr>
+        <span id="final">
+             <!-- Link to the page editor page -->
+            <a href="editorPurna.html">Page Developer Purna Peramune : More Info >></a>
+        </span>
+    </footer>
+</body>
+</html>

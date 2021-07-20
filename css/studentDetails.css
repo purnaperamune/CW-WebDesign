@@ -1,0 +1,61 @@
+body{
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+div h1{
+    font-family: Arial Black;
+    text-align: center;
+}
+.main{
+    background-color: #2cd1ad;
+    height: 520px;
+    width: 100%;
+}
+#member-1-img{
+    background-image: url("../images/student1.jpeg");
+}
+#member-2-img{
+    background-image: url("../images/student2.jpg");
+    background-position-y: -50px;  
+}
+#member-3-img{
+    background-image: url("../images/student3.jpg");
+}
+.img-features{
+    background-size: cover;
+    width: 360px;
+    height: 380px;
+    background-repeat: no-repeat;
+}
+.member-card{
+    height: 380px;
+    width: 360px;
+    margin-top: 70px;
+    margin-left: 85px;
+    display: block;
+    float: left;
+
+}
+.info {
+    visibility: hidden;
+    width: 350px;
+    position: absolute;
+    top: 590px;
+    border: red solid 5px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: black;
+    color: blanchedalmond;
+}
+.member-card:hover .info{
+    visibility: visible;
+}
+h2{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+p{
+    line-height: 20px;
+    padding: 5px;
+}
