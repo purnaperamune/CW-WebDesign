@@ -1,0 +1,612 @@
+<!doctype html>
+    <html lang="en">
+	     <head>
+		     <title>Product Page</title>
+			 <link rel="stylesheet" href="css/productPayment.css">
+			 <script src ="js/ProductPayment.js"></script>
+			 <link rel="stylesheet" href="css/navBar.css">
+		 </head>
+		 <body>
+			<div id="navBar">     
+				<ul>
+					<li><a href="#">Query Form</a></li>
+					<li><a href="productPayment.html">Buy Products</a></li>
+					<li><a href="#">Diagram SVG</a></li>
+					<li><a href="quiz.html">Quiz</a></li>
+					<li><a href="#">Thumbnail Images</a></li>
+					<li><a href="studentDetails.html">Student Details</a></li>
+					<li id="imgLi"><a href="#"><img src="images/logonew.png" alt="logo"></a></li>
+				</ul>
+			</div>
+			 
+			 <h1 align="center">SPORT PRODUCTS</h1>
+			 <hr>
+			 
+		     <h2 align="center">CRICKET ITEAMS</h2>
+		     <table border="1" align="center">
+			     <tr align="center">
+		
+				 <td>    <!--Product 01-->
+					 <img class="image" src="images/Cricket_Bat.jpg">
+					 <p><b>Cricket Bat</b></p>
+					 <p>★★★★★(5.0)</br>
+					     2356 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product1">
+					 <span class="price">Price - Rs.9,500</span></br></br>
+					<button onclick="buyProduct(1);" id="button1">Add To Cart</button></br>
+				 </td>
+					 
+				 <td>    <!--Product 02-->
+					 <img class="image"  src="images/Cricket_helmet.jpg">
+					 <p><b>Cricket Helmet</b></p>
+					 <p>★★★★(4.7)</br>
+					     1278 sold</p>
+					  <input type="number" value="0" min="1" max="10" class="quantity" id="product2">
+					 <span class="price">Price - Rs.5,500</span></br></br>
+					 <button onclick="buyProduct(2);" id="button2">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 03-->
+					 <img class="image"  src="images/Cricket_Gloves.jpg">
+					 <p><b>Cricket Gloves</b></p>
+					 <p>★★★★(4.6)</br>
+					     987 sold</p>
+				     <input type="number" value="0" min="1" max="10" class="quantity" id="product3">
+					 <span class="price">Price - Rs.3,000</span></br></br>
+					 <button onclick="buyProduct(3);" id="button3">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 04-->
+					 <img class="image" src="images/Cricket_leather_ball.jpg">
+					 <p><b>Cricket Leather ball</b></p>
+					 <p>★★★★★(4.9)</br>
+					     5689 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product4">
+					 <span class="price">Price - Rs.2,000</span></br></br>
+					 <button onclick="buyProduct(4);" id="button4">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 05-->
+					 <img class="image" src="images/Cricket_Batting_Pad.jpg">
+					 <p><b>Cricket Batting Pad</b></p>
+					 <p>★★★★★(4.6)</br>
+					     569 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product5">
+					 <span class="price">Price - Rs.2,000</span></br></br>
+					 <button onclick="buyProduct(5);" id="button5">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 06-->
+					 <img class="image" src="images/Cricket_Bag.jpg">
+					 <p><b>Cricket Bag</b></p>
+					 <p>★★★(3.9)</br>
+					     237 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product6">
+					<span class="price">Price - Rs.5,500</span></br></br>
+					 <button onclick="buyProduct(6);" id="button6">Add To Cart</button>
+				 </td>
+				 
+			 </table>
+			 
+			 <table border="1" align="center">
+			     <tr align="center">
+					 
+				 <td>    <!--Product 07-->
+					 <img class="image" src="images/Cricket_Suit.jpg">
+					 <p><b>Cricket Suit</b></p>
+					 <p>★★★(3.4)</br>
+					     258 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product7">
+					 <span class="price">Price - Rs.4,500</span></br></br>
+					 <button onclick="buyProduct(7);" id="button7">Add To Cart</button>
+				 </td>
+				 
+				  <td>    <!--Product 08-->
+					 <img class="image" src="images/Cricket_wickets.jpg">
+					 <p><b>Cricket wickets</b></p>
+					 <p>★★★★(4.1)</br>
+					     341 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product8">
+					 <span class="price">Price - Rs.5,000</span></br></br>
+					 <button onclick="buyProduct(8);" id="button8">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 09-->
+					 <img class="image" src="images/Cricket_Bat2.jpg">
+					 <p><b>Cricket Bat</b></p>
+					 <p>★★★★★(4.7)</br>
+					     1986 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product9">
+					 <span class="price">Price - Rs.11,500</span></br></br>
+					 <button onclick="buyProduct(9);" id="button9">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 10-->
+					 <img class="image" src="images/Cricket_Ballguard.jpg">
+					 <p><b>Cricket ball guardt</b></p>
+					 <p>★★★★★(4.7)</br>
+					     1986 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product10">
+					 <span class="price">Price - Rs.3,500</span></br></br>
+					 <button onclick="buyProduct(10);" id="button10">Add To Cart</button>
+				 </td>
+					 
+			 </table>
+			 
+			 </br>
+			 </br>
+			 
+			 <hr>
+			 
+			 <h2 align="center">BADMINTON ITEAMS</h2>
+		     <table border="1" align="center">
+			     <tr align="center">
+				 
+				 <td>    <!--Product 01-->
+					 <img class="image" src="images/Batminton_Racket.jpg">
+					 <p><b>Batminton Racket</b></p>
+					 <p>★★★★(4.8)</br>
+					     4721sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product11">
+					 <span class="price">Price - Rs.8,000</span></br></br>
+					 <button onclick="buyProduct(11);" id="button11">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 02-->
+					 <img class="image" src="images/Batminton_Shuttlecock.jpg">
+					 <p><b>Batminton Shuttlecock</b></p>
+					 <p>★★★★(4.7)</br>
+					     7683 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product12">
+					 <span class="price">Price - Rs.1,500</span></br></br>
+					 <button onclick="buyProduct(12);" id="button12">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 03-->
+					 <img class="image" src="images/Batminton_Bag.jpg">
+					 <p><b>Batminton Bag</b></p>
+					 <p>★★★(3.8)</br>
+					     768 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product13">
+					 <span class="price">Price - Rs.5,000</span></br></br>
+					 <button onclick="buyProduct(13);" id="button13">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 04-->
+					 <img class="image" src="images/Batminton_Suit.jpg">
+					 <p><b>Batminton Suit</b></p>
+					 <p>★★★★(4.1)</br>
+					     394 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product14">
+					 <span class="price">Price - Rs.4,500</span></br></br>
+					 <button onclick="buyProduct(14);" id="button14">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 05-->
+					 <img class="image" src="images/Batminton_Net.jpg">
+					 <p><b>Batminton Net</b></p>
+					 <p>★★(2.7)</br>
+					     231 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product15">
+					 <span class="price">Price - Rs.10,000</span></br></br>
+					 <button onclick="buyProduct(15);" id="button15">Add To Cart</button>
+				 </td>
+					 
+			 </table>
+			 
+			 </br>
+			 </br>
+			 
+			 <hr>
+			 
+		     <h2 align="center">SWIMMING ITEAMS</h2>
+		     <table border="1" align="center">
+			     <tr align="center">
+				 
+				 <td>    <!--Product 01-->
+					 <img class="image" src="images/Swimming_Board.jpg">
+					 <p><b>Swimming Board</b></p>
+					 <p>★★★★(4.9)</br>
+					     5478 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product16">
+					 <span class="price">Price - Rs.1,550</span></br></br>
+					 <button onclick="buyProduct(16);" id="button16">>Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 02-->
+					 <img class="image" src="images/Swimming_Cap.jpg">
+					 <p><b>Swimming Cap</b></p>
+					 <p>★★★★★(5.0)</br>
+					     8932 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product17">
+					 <span class="price">Price - Rs.1,200</span></br></br>
+					 <button onclick="buyProduct(17);" id="button17">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 03-->
+					 <img class="image" src="images/Swimming_Fins.jpg">
+					 <p><b>Swimming Fins</b></p>
+					 <p>★★★★(4.1)</br>
+					     2367 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product18">
+					 <span class="price">Price - Rs.3,500</span></br></br>
+					 <button onclick="buyProduct(18);" id="button18">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 04-->
+					 <img class="image" src="images/Swimming_Handpaddles.jpg">
+					 <p><b>Swimming Handpaddles</b></p>
+					 <p>★★★(3.9)</br>
+					    2354 sold</p>
+				     <input type="number" value="0" min="1" max="10" class="quantity" id="product19">
+					 <span class="price">Price - Rs.3,000</span></br></br>
+					 <button onclick="buyProduct(19);" id="button19">Add To Cart</button>
+				 </td>
+					 
+				 <td>    <!--Product 05-->
+					 <img class="image" src="images/Swimming_Goggles.jpg">
+					 <p><b>Swimming Goggles</b></p>
+					 <p>★★★★(4.8)</br>
+					     7690 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product20">
+					 <span class="price">Price - Rs.1,250</span></br></br>
+					 <button onclick="buyProduct(20);" id="button20">Add To Cart</button>
+				 </td>
+				 
+			 </table>
+				 
+				 </br>
+				 </br>
+				 
+				 <hr>
+				 
+			 <h2 align="center">TENNIS ITEAMS</h2>
+		     <table border="1" align="center">
+			     <tr align="center">
+				 
+				 <td>    <!--Product 01-->
+					 <img class="image" src="images/Tennis_Racket.jpg">
+					 <p><b>Tennis Racket</b></p>
+					 <p>★★★★★(5.0)</br>
+					     8975 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product21">
+					 <span class="price">Price - Rs.9,750</span></br></br>
+					 <button onclick="buyProduct(21);" id="button21">Add To Cart</button>
+				 </td>
+					 
+			     <td>    <!--Product 02-->
+					 <img class="image" src="images/Tennis_Ball.jpg">
+					 <p><b>Tennis Ball</b></p>
+					 <p>★★★★★(5.0)</br>
+					     9567 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product22">
+					 <span class="price">Price - Rs.200</span></br></br>
+					 <button onclick="buyProduct(22);" id="button22">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 03-->
+					 <img class="image" src="images/Tennis_Bag.jpg">
+					 <p><b>Tennis Bag</b></p>
+					 <p>★★★(3.8)</br>
+					     269 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product23">
+					 <span class="price">Price - Rs.1,100</span></br></br>
+					 <button onclick="buyProduct(23);" id="button23">Add To Cart</button>
+				 </td>
+				 
+				  <td>    <!--Product 04-->
+					 <img class="image" src="images/Tennis_Racket2.jpg">
+					 <p><b>Tennis Racket</b></p>
+					 <p>★★★(4.8)</br>
+					     7621 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product24">
+					 <span class="price">Price - Rs.10,000</span></br></br>
+					 <button onclick="buyProduct(24);" id="button24">Add To Cart</button>
+				 </td>
+				 
+				  <td>    <!--Product 05-->
+					 <img class="image" src="images/Tennis_Ball2.jpg">
+					 <p><b>Tennis Ball 3x</b></p>
+					 <p>★★★(4.2)</br>
+					     5723 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product25">
+					 <span class="price">Price - Rs.1,000</span></br></br>
+					 <button onclick="buyProduct25);" id="button25">Add To Cart</button>
+				 </td>
+				 
+			 </table>
+			 
+			 </br>
+			 </br>
+			 
+			 <hr>
+			 
+			  <h2 align="center">SHOES</h2>
+		     <table border="1" align="center">
+			     <tr align="center">
+				 
+			     <td>    <!--Product 01-->
+					 <img class="image" src="images/Cricket_Shoes.jpg">
+					 <p><b>Cricket Shoes</b></p>
+					 <p>★★★★(4.1)</br>
+					     3521 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product26">
+					 <span class="price">Price - Rs.11,500</span></br></br>
+					 <button onclick="buyProduct(26);" id="button26">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 02-->
+					 <img class="image" src="images/Football_Shoes.jpg">
+					 <p><b>Football Shoes</b></p>
+					 <p>★★★(3.8)</br>
+					     2143 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product27">
+					 <span class="price">Price - Rs.13,000</span></br></br>
+					 <button onclick="buyProduct(27);" id="button27">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 03-->
+					 <img class="image" src="images/Batminton_shoes.jpg">
+					 <p><b>Batminton Shoes</b></p>
+					 <p>★★★(3.9)</br>
+					     2341 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product28">
+					 <span class="price">Price - Rs.10,000</span></br></br>
+					 <button onclick="buyProduct(28);" id="button28">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 04-->
+					 <img class="image" src="images/Jogging_Shoes.jpg">
+					 <p><b>Jogging Shoes</b></p>
+					 <p>★★★(3.9)</br>
+					     2435 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product29">
+					 <span class="price">Price - Rs.8,000</span></br></br>
+					 <button onclick="buyProduct(29);" id="button29">Add To Cart</button>
+				 </td>
+				 
+				  <td>    <!--Product 05-->
+					 <img class="image" src="images/Casual_Shoes.jpg">
+					 <p><b>Casual Shoes</b></p>
+					 <p>★★★(4.3)</br>
+					     4536 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product30">
+					 <span class="price">Price - Rs.8,000</span></br></br>
+					 <button onclick="buyProduct(30);" id="button30">Add To Cart</button>
+				 </td>
+				 
+			 </table>
+			 
+			 </br>  
+			 </br>
+			 
+			 <hr>
+			 
+			 <h2 align="center">OTHER ITEAMS</h2>
+		     <table border="1" align="center">
+			     <tr align="center">
+				 
+			     <td>    <!--Product 01-->
+					 <img class="image" src="images/Sports_cap.jpg">
+					 <p><b>Sports cap</b></p>
+					 <p>★★★★★(5.0)</br>
+					     9807 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product31">
+					 <span class="price">Price - Rs.1,000</span></br></br>
+					 <button onclick="buyProduct(31);" id="button31">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 02-->
+					 <img class="image" src="images/Sports_Towel.jpg">
+					 <p><b>Sports Towel</b></p>
+					 <p>★★★(3.4)</br>
+					     1362 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product32">
+					 <span class="price">Price - Rs.2,100</span></br></br>
+					 <button onclick="buyProduct(32);" id="button32">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 03-->
+					 <img class="image" src="images/Rugby_Ball.jpg">
+					 <p><b>Rugby Ball</b></p>
+					 <p>★★★★(4.9)</br>
+					     5634 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product33">
+					 <span class="price">Price - Rs.7,300</span></br></br>
+					 <button onclick="buyProduct(33);" id="button33">Add To Cart</button>
+				 </td>
+				 
+				  <td>    <!--Product 04-->
+					 <img class="image" src="images/BasketBall_img.jpg">
+					 <p><b>Basketball</b></p>
+					 <p>★★★★(4.3)</br>
+					     1637 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product34">
+					 <span class="price">Price - Rs.5,000</span></br></br>
+					 <button onclick="buyProduct(34);" id="button34">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 05-->
+					 <img class="image" src="images/Sport_Waterbottel.jpg">
+					 <p><b>Sport Waterbottel</b></p>
+					 <p>★★★★★(4.7)</br>
+					     6578 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product35">
+					 <span class="price">Price - Rs.2,000</span></br></br>
+					 <button onclick="buyProduct(35);" id="button35">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 06-->
+					 <img class="image" src="images/Foot_Ball.jpg">
+					 <p><b>Foot Ball</b></p>
+					 <p>★★★★★(4.1)</br>
+					     3427 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product36">
+					 <span class="price">Price - Rs.6,000</span></br></br>
+					 <button onclick="buyProduct(36);" id="button36">Add To Cart</button>
+				 </td>
+				 
+			 </table>
+			 
+			 <table border="1" align="center">
+			     <tr align="center">
+				 
+			     <td>    <!--Product 01-->
+					 <img class="image" src="images/Sports_Bag.jpg">
+					 <p><b>Sports Bag</b></p>
+					 <p>★★★★★(3.7)</br>
+					     1284 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product37">
+					 <span class="price">Price - Rs.4,500</span></br></br>
+					 <button onclick="buyProduct(37);" id="button37">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 02-->
+					 <img class="image" src="images/Sports_Hairband.jpg">
+					 <p><b>Sports Hairband</b></p>
+					 <p>★★★★★(4.7)</br>
+					     6453 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product38">
+					 <span class="price">Price - Rs.500</span></br></br>
+					 <button onclick="buyProduct(38);" id="button38">Add To Cart</button>
+				 </td>
+				 
+				 <td>    <!--Product 03-->
+					 <img class="image" src="images/Sports_Handband.jpg">
+					 <p><b>Sports Handband</b></p>
+					 <p>★★★★★(4.9)</br>
+					     8794 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product39">
+					 <span class="price">Price - Rs.750</span></br></br>
+					 <button onclick="buyProduct(39);" id="button39">Add To Cart</button>
+				 </td>
+				 
+				  <td>    <!--Product 04-->
+					 <img class="image" src="images/Golf_Ball.jpg">
+					 <p><b>Golf Racket and Golf Ball</b></p>
+					 <p>★★★★★(3.2)</br>
+					     1628 sold</p>
+					 <input type="number" value="0" min="1" max="10" class="quantity" id="product40">
+					 <span class="price">Price - Rs.9,000</span></br></br>
+					 <button onclick="buyProduct(40);" id="button40">Add To Cart</button>
+				 </td>
+				 
+			 </table>
+			 
+			 </br>
+			 </br>
+			 
+			 <hr>
+		
+		<!--Payement area-->
+		<h1 align="center">PAYMENT AREA</h1>
+			 <hr>
+			 
+		     <div id="form-block">
+			 <form name="sample" id="form-background">
+				
+				<h2>Personal information</h2>
+				
+				<label for="fName">First Name:</label>
+				<input type="text" id="fName" name="fName">
+
+				<label for="sName">Second Name:</label>
+				<input type="text" id="sName" name="sName">
+
+				<label for="email">E-mail:</label>
+				<input type="text" id="email" name="email" placeholder="abc@gmail.com">
+
+				<label for="contactNumber">Contatc Number:</label>
+				<input type="text" id="contactNumber" name="contactNumber">
+
+				<label for="address">Address:</label>
+				<input type="text" id="address" name="address">
+
+				<label for="city">City"</label>
+				<input type="text" id="city" name="city">
+
+				<label for="zip">Zip"</label>
+				<input type="text" id="zip" name="zip">
+				
+				<h2>Payment Detail</h2>
+				 
+				<p>Accepted Cards</p>
+				<div class = "cards">
+				 <img src="images/mc.png" width="50" height="40">
+                 <img src="images/vi.png" width="50" height="40">
+                 <img src="images/pp.png" width="50" height="40">
+				 </div>
+				 
+				 <label for="cardname">Card Holder Name:</label>
+			     <input type="text" name="cardname" id="cardname">
+				
+				 <label for="cardnum">Card Number:</label>
+			      <input type="text" name="cardnum" id="cardnum" placeholder="XXXX-XXXX-XXXX-XXXX">
+			
+				 <label for="exdate">Expiry Date:</label>
+			     <input type="text" name="exdate" id="exdate" placeholder="10/24">
+				
+				 <label for="cvv">cvv:</label>
+			     <input type="text" name="cvv" id="cvv" placeholder="100"></br>
+			
+			</form>
+			</div>
+			<a href="#top" style="float: right; margin-right: 20px; font-size: 18px;">Back to top</a><br><br>
+			<input class="button button01" type="button" id="btnSubmit" value="Submit">
+			
+			<script>
+			document.getElementById('btnSubmit').addEventListener('click',validation)
+		
+				
+		
+				function validation(){
+					var firstName = document.forms["sample"]["fName"].valnue;
+					var secondName = document.forms["sample"]["sName"].value;
+					var email = document.forms["sample"]["email"].value;
+					var contactNumber = document.forms["sample"]["contactNumber"].value;
+					var address = document.forms["sample"]["address"].value;
+					var city = document.forms["sample"]["city"].value;
+					var zip = document.forms["sample"]["zip"].value;
+					var cardName = document.forms["sample"]["cardname"].value;
+					var cardNum = document.forms["sample"]["cardnum"].value;
+					var EXPdate = document.forms["sample"]["exdate"].value;
+					var CVV = document.forms["sample"]["cvv"].value;
+					if (firstName == "") {
+						alert("You didnt enter your first name");
+					}
+					else if(secondName==""){
+						alert("You didnt enter your second name");
+					}
+					else if(email==""){
+						alert("You didnt enter your email");
+					}
+					else if(contactNumber==""){
+						alert("You didnt enter your contact number");
+					}
+					else if(address==""){
+						alert("You didnt enter your address");
+					}
+					else if(city==""){
+						alert("You didnt enter your city");
+					}
+					else if(zip==""){
+						alert("You didnt enter the zip number");
+					}
+					else if(cardName==""){
+						alert("You didnt enter the Card Name");
+					}
+					else if(cardNum==""){
+						alert("You didnt enter the Card number");
+					}
+					else if(EXPdate==""){
+						alert("You didnt enter the exp Date");
+					}
+					else if(CVV==""){
+						alert("You didnt enter the CVV");
+					}
+					
+				}
+			</script>
+				
+		 </body>
+	 </html>
